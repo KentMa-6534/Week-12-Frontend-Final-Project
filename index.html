@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Club Members List</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-primary">
+    <div class="py-3"></div>
+    <div class="container bg-light mb-3">
+      <br />
+      <div class="form-group">
+        <h2>Chess Club Sign Up Form ♟</h2>
+        <div class="row">
+          <div class="col-md">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="col-md">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email Address"
+            />
+          </div>
+        </div>
+        <div class="row py-3">
+          <div>
+            <button class="btn btn-primary col-md form-control" id="addMember">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container bg-light mb-3">
+      <br />
+      <div class="form-group">
+        <h2>Update Member Form:</h2>
+        <div class="row">
+          <div class="col-md">
+            <label for="memberId">Member ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="memberId"
+              placeholder="ID"
+            />
+          </div>
+          <div class="col-md">
+            <label for="updateFirstName">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="updateFirstName"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="col-md">
+            <label for="updateLastName">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="updateLastName"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <label for="updateEmail">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="updateEmail"
+              placeholder="Email Address"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row py-3">
+        <div>
+          <button id="updateMember" class="btn btn-primary col-md form-control">
+            Update
+          </button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="bg-light container-md">
+        <br>
+    <h2 style="text-align: center;">Members:</h2>
+    <table id="memberList" class="table bg-light table-striped">
+      <thead>
+        <th scope="col">ID:</th>
+        <th scope="col">First Name:</th>
+        <th scope="col">Last Name:</th>
+        <th scope="col">Email Address:</th>
+        <th scope="col">Action:</th>
+      </thead>
+      <tbody></tbody>
+    </table>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
